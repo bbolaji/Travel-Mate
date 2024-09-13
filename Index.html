@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TRAVELMATE Notification Setup</title>
+    <link rel="stylesheet" href="styles.css">  <!-- Link to external CSS file for styling -->
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+    <div class="header-content">
+        <img src="002.jpg" alt="TravelMate 002" class="002">
+        <div class="text-content">
+            <h1>Welcome to TRAVELMATE</h1>
+            <p>Your travel companion for real-time notifications, ticket reservations, and more.</p>
+        </div>
+		 </div>
+        <!-- Navigation menu on the far right -->
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#services"></a></li>
+                <li><a href="#Insight & reporting"></a></li>
+                <li><a href="menu.html">Menu</a></li> <!-- New Menu link -->
+            </ul>
+        </nav>
+    </div>
+</header>
+    </div>
+</header>
+    <!-- Main Section -->
+    <main>
+        <!-- Notification Setup Section -->
+        <section id="notification-setup">
+            <h2>Set Up Your Travel Notifications</h2>
+            <form action="notification_setup.php" method="POST">
+                <label for="email">Enter your email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="notification-type">Select notification type:</label>
+                <select id="notification-type" name="notification-type">
+                    <option value="visa-reminder">Visa Expiry Reminder</option>
+                    <option value="flight-alerts">Flight Departure Alerts</option>
+                    <option value="consulate-updates">Consulate Updates</option>
+                </select>
+
+                <button type="submit">Set Up Notification</button>
+            </form>
+        </section>
+
+        <!-- Travel Routes Section -->
+        <section id="travel-routes">
+            <h2>Available Travel Routes</h2>
+            <ul>
+                <li>Lagos to Abuja</li>
+                <li>Lagos to the UK</li>
+                <li>Lagos to the US</li>
+            </ul>
+        </section>
+
+        <!-- Calendar Sync Section -->
+        <section id="calendar-sync">
+            <h2>Sync with Your Calendar</h2>
+            <form action="calendar_sync.php" method="POST">
+                <label for="calendar-service">Choose your calendar service:</label>
+                <select id="calendar-service" name="calendar-service">
+                    <option value="google">Google Calendar</option>
+                    <option value="outlook">Outlook Calendar</option>
+                </select>
+                <button type="submit">Sync Calendar</button>
+            </form>
+        </section>
+		<section id="notification-setup">
+    <h2>Unified Notification Setup</h2>
+    <form id="notification-form">
+        <!-- Client Information -->
+        <div class="form-group">
+            <label for="client-name">Client Name:</label>
+            <input type="text" id="client-name" name="clientName" placeholder="Enter client name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="visa-type">Visa Type:</label>
+            <select id="visa-type" name="visaType" required>
+                <option value="tourist">Tourist Visa</option>
+                <option value="business">Business Visa</option>
+                <option value="student">Student Visa</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="consulate">Desired Consulate:</label>
+            <input type="text" id="consulate" name="consulate" placeholder="Enter consulate name" required>
+        </div>
+
+        <div class="form-group">
+            <label for="preferred-dates">Preferred Dates:</label>
+            <input type="date" id="preferred-dates" name="preferredDates" required>
+        </div>
+
+        <!-- Custom Notification Preferences -->
+        <div class="form-group">
+            <h3>Custom Notification Preferences</h3>
+            <label for="urgent-client">Urgent Client:</label>
+            <input type="checkbox" id="urgent-client" name="urgentClient">
+            <label for="notification-days">Notify me if the interview is available within:</label>
+            <input type="number" id="notification-days" name="notificationDays" min="1" max="30" placeholder="Enter days (e.g., 30)">
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit">Set Notification</button>
+    </form>
+</section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 TRAVELMATE. All Rights Reserved.</p>
+    </footer>
+	<script src="script.js"></script>
+</body>
+</html>
